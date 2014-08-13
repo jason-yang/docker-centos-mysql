@@ -2,7 +2,7 @@ FROM centos:centos6
 MAINTAINER Jason Yang <jason-yang@live.ca>
 
 # Install packages
-RUN yum install -y mysql-server
+RUN yum install -y mysql-server tar
 
 # Remove pre-install database
 RUN rm -rf /var/lib/mysql/*
